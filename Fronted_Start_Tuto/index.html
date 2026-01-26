@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+    <script src="https://kit.fontawesome.com/f355933c08.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="password" placeholder="Password" id="pwd">
+        <i class="fa-sharp fa-regular fa-eye-slash" id="img" onclick=" changeImageAndHidePwd()"></i>
+       
+    </div>
+
+    <script>
+        let input = document.getElementById("pwd") ; 
+        let img = document.getElementById("img") ; 
+
+    function  changeImageAndHidePwd() {
+         if (input.type === 'password') {
+         input.removeAttribute("type") ; 
+         input.setAttribute('type' , 'text') ;
+         img.classList.remove('fa-eye-slash') ;
+         img.classList.add('fa-eye') ;
+         }else {
+            input.setAttribute('type' , 'password') ; 
+            img.classList.remove('fa-eye');
+            img.classList.add('fa-eye-slash') ; 
+
+         }
+      }
+    </script>
+</body>
+</html>

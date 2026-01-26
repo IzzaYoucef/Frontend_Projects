@@ -1,0 +1,86 @@
+footer {
+    width: 80%;
+    margin: auto;
+    border-radius: 19px; 
+    background-color: rgb(255, 214, 255);
+    padding: 20px;
+    transform: translateY(-4%);
+}
+footer header {
+    width: 100%; 
+    display: grid;
+}
+footer header p {
+    margin: auto; 
+    text-transform: uppercase; 
+    font-size: 24px;
+    font-weight: 500; 
+}
+header span {
+    margin: auto; 
+    margin-top: 10px;
+}
+footer div.insert-email-and-subs {
+    margin: auto; 
+    width: 80%;
+    display: flex;
+    position: relative;
+    margin-top: 60px;
+}
+.insert-email-and-subs input {
+    width: 200%; 
+    border-radius: 30px; 
+    outline: none; 
+    padding: 10px 17px;
+    border: none;
+    
+}
+.insert-email-and-subs button {
+    padding: 7px 14px; 
+    color: #fff; 
+    font-size: 23px; 
+    font-weight: 500; 
+    background-color: black; 
+    cursor: pointer;
+    border-radius: 30px;
+    margin-right: 10px;
+    z-index: 100;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    height: 100%;
+    line-height: 100%;
+    border: none; 
+    outline: none;
+}
+footer .our-company {
+    margin-top: 78px; 
+    display :grid ; 
+    place-items: center;
+}
+.our-company ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+}
+ul li {
+    list-style: none; 
+    text-decoration: none;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+ul li:hover {
+    color: #fff ; 
+    background-color: pink; 
+    padding: 10px 27px; 
+    border-radius: 20px;
+    scale: 1.2;
+    margin-right: 10px;
+}
+
+ul.social-media-icons img {
+    margin-left: 10px;
+    cursor: pointer;
+}

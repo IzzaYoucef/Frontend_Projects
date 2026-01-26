@@ -1,0 +1,24 @@
+.images {
+    width: 100% ;
+    margin: auto; 
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+.images .img-desc {
+    width: calc(80% / 4) ;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .4);
+    display: flex; 
+    flex-direction: column;
+    text-wrap: wrap;
+}
+.img-desc img {
+    border-radius: 10px;
+}
+
+.img-desc h2 {
+    text-decoration: line-through;
+}
+.description h2 {
+    text-decoration: line-through;
+}

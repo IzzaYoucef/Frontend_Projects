@@ -1,0 +1,35 @@
+.about {
+    height: 550px; 
+    width: 100%;
+    display: flex;
+}
+.video-play {
+    height: 100%; 
+    width: 70%; 
+    position: relative;
+    margin-top: 30px;
+}
+.video-play img.main-img {
+    height: 100%; 
+    width: 100%;
+    border-radius:30px ;
+}
+#two {
+    position: absolute;
+    left: 45%; 
+    top: 45%;
+    height: 70px; 
+    width: 70px;
+    cursor: pointer;
+}
+#text {
+    width: 80%; 
+    height: 100%;
+    padding: 60px 30px; 
+    margin: 20px auto;
+    display: grid; 
+    column-gap: 20px;
+}
+h3 {
+    color: rgba(0, 0, 58, .7);
+}

@@ -1,0 +1,12 @@
+div.title {
+    width: 100%;
+    color: #fff;
+    
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 50px;
+}

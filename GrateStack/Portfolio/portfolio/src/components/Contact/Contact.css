@@ -1,0 +1,41 @@
+form {
+    display: grid;
+    width: 60%;
+    margin: auto;
+    gap: 20px;
+}
+form input , textarea {
+    background-color: transparent;
+    border: 2px rgba(255, 255, 255, .4) solid;
+    color: #fff;
+    font-size: 23px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .4) ;
+}
+form button {
+    margin: auto;
+}
+.melange {
+    display: grid;
+    gap: 40px;
+}
+.title-contact {
+    margin-top: 20px;
+}
+.icons {
+    margin: auto;
+}
+.icons img {
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+}
+footer {
+    color: #fff;
+    margin: auto;
+    text-wrap: wrap;
+    font-weight: 200;
+}
+footer h4 {
+     margin-left: 220px;
+}

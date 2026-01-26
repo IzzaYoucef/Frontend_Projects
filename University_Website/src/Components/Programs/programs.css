@@ -1,0 +1,59 @@
+.programs {
+    width: 100%;
+    margin-top: 20px;
+}
+.programs .text-programs {
+    display: grid;
+    place-items: center;
+}
+.programs .images {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: .4s;
+}
+.images .img {
+    height: 340px;
+    width: 320px;
+    margin-left: 30px;
+    border-radius: 25px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative ;
+}
+.img:hover {
+   /* background: linear-gradient(rgba(0, 0, 58, .7), rgba(0, 0, 58, .7)); */
+   background-position: center; 
+   background-size: cover;
+   
+   
+}
+.icon {
+   
+    position: absolute;
+    z-index: 100;
+    height: 80px;
+    overflow: hidden;
+    padding-top: 70%;
+    opacity: 0;
+ 
+}
+.one {
+    
+        top: 130px;
+        left: 250px;
+}
+.two {
+    top: 130px;
+    left: 620px ;
+}
+.three {
+    top: 130px ; 
+    left: 970px;
+ }
+ .un:hover ~ .one ,
+  .deux:hover ~ .two ,
+  .trois:hover ~ .three {
+    opacity: 1;
+    padding-top: 0;
+ }

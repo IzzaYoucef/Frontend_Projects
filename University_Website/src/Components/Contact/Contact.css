@@ -1,0 +1,78 @@
+.contact-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    
+}
+.contact-info caption {
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+    align-items: center;
+}
+caption img {
+    height: 50px;
+    width: 50px;
+}
+.main-informations p {
+  margin-bottom: 17px;
+}
+.info img {
+    height: 40px;
+    width: 40px;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 60px 0px;
+  background-color: aliceblue;
+  text-align: center;
+
+}
+.info p {
+    margin-left: 10px;
+}
+form {
+    margin: 0px 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+form div {
+    padding: 10px; 
+    font-size: 20px;
+}
+form div input {
+    width: 100%;
+    padding: 10px; 
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: #ebecfe;
+}
+input#bigText {
+    height: 200px;
+}
+input#bigText::placeholder {
+    position: fixed;
+    top: 4px; 
+    left: 4px;
+}
+main {
+    overflow: hidden;
+}
+textarea{
+    border: none; 
+    outline: none;
+    height: 100px;
+    font-size: 20px;
+    width: 100%;
+    background-color: #ebecfe;
+}
+form {
+    position: relative;
+}
+span {
+    position: absolute;
+    left: 0;
+}

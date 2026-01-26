@@ -1,0 +1,21 @@
+.usable-componenet {
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
+}
+h1 {
+    position: relative;
+}
+.usable-componenet h1::after {
+   content: ""; 
+   width: 100px; 
+   height: 4px; 
+   color: black; 
+   bottom: 0 ;
+   background-color: black;
+   position: absolute;
+   left: 50%;
+   transform: translate(-50% , -50%);
+}

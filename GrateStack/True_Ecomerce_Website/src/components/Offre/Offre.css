@@ -1,0 +1,35 @@
+.vol-two {
+    width: 980px; 
+    height: 500px; 
+    border-radius: 20px; 
+    background-color: pink;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .4);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.vol-two .text-- {
+    margin-top: 80px; 
+    margin-left: 40px;
+    font-size: 28px;
+}
+.vol-two .img-vol-two {
+    margin-bottom: 20px;
+}
+.img-vol-two img {
+    height: 500px;
+    padding: 10px;
+}
+.text-- button {
+    padding: 17px 27px; 
+    color: #fff; 
+    font-size: 24px; 
+    font-weight: 600; 
+    background-color: rgb(211, 116, 42);
+    cursor: pointer;
+    margin-top: 20px; 
+    border-radius: 30px; 
+    border: none;
+}

@@ -1,0 +1,67 @@
+nav{
+    width: 100%;
+     display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    border-bottom: 1px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+  
+}
+nav ul {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li {
+    list-style: none ;
+    text-decoration: none ;
+    margin: auto 10px ;
+    cursor: pointer;
+}
+nav .contact-shop {
+    display: flex; 
+    justify-content: space-around;
+    width: 10%;
+}
+nav .contact-shop button {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 30px; 
+    border: none; 
+    outline: none; 
+    padding: 5px 25px;
+    color: #fff; 
+    font-weight: 500; 
+    background-color: rgb(217, 120, 23);
+    cursor: pointer;
+}
+.shop {
+    position: relative;
+}
+.shop span{
+    position: absolute; 
+    top: -5px; 
+    right: -5px; 
+    color: #fff; 
+    background-color: red;
+    border-radius: 50px; 
+    text-align: center;
+    width: 18px;
+    height: 18px; 
+    line-height: 18px;
+    font-size: 15px;
+
+}
+button a {
+    list-style: none; 
+    text-decoration: none;
+    color: #fff;
+}

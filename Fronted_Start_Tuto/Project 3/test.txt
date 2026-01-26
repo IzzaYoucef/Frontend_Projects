@@ -1,0 +1,6 @@
+
+#LA plus faible precondition : # {res = div(n,i) & i*i > n} || {res = div(n,i) - 1 && i*i = n}
+if i*i == n: 
+  # res + 1  = div(n,i) => res = div(n,i) - 1 ;
+   res = res + 1
+# res = div(n,i)

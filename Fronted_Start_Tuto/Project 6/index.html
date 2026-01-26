@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f355933c08.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <button id="success">Success</button>
+        <button id="error">Error</button>
+        <button id="invalid">Invalid</button>
+    </nav>
+    <div class="messages">
+        <div class="msg-box"></div>
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll("button");
+        let msgBox = document.querySelector(".messages .msg-box");
+
+        buttons.forEach((button) => {
+            button.addEventListener('click', () => {
+                let div = document.createElement("div");
+                let icon = document.createElement("i");
+                let text;
+
+                if (button.id === 'success') {
+                    icon.className = "fa-solid fa-check";
+                    icon.style.cssText = 'border-radius: 50%; background-color: transparent; color: green; padding: 10px;';
+                    text = document.createTextNode(" Submitted Successfully");
+                } else if (button.id === 'error') {
+                    icon.className = "fa-solid fa-xmark";
+                    icon.style.cssText = 'border-radius: 50%; background-color: red; color: #fff; padding: 10px;';
+                    text = document.createTextNode(" Error! Please Fix It");
+                } else {
+                    icon.className = "fa-solid fa-exclamation";
+                    icon.style.cssText = 'border-radius: 50% ; background-color : blue ; color: #fff; font-size : 25px ;  padding: 10px;';
+                    text = document.createTextNode(" Invalid Submission");
+                }
+
+                div.appendChild(icon);
+                div.appendChild(text);
+
+                // Style the div
+                div.style.cssText = 'display: flex; align-items: center; padding: 10px; width: 100%; border: 1px solid #ccc; margin-bottom: 10px; background-color: #f9f9f9;';
+                icon.style.marginRight = "10px";
+
+                msgBox.appendChild(div);
+             setTimeout(() => {
+                div.style.display = 'none'
+             } , 2000) ;
+            });
+        });
+    </script>
+</body>
+</html>

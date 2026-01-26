@@ -1,0 +1,87 @@
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+body {
+    display: grid; 
+    height: 100vh; 
+}
+.Image-container {
+    height: 500px; 
+    width: 800px; 
+    display: grid; 
+    background-color: #ddd; 
+    box-shadow: 0 0 10px rgba(0, 0 , 0 , .7);
+    padding : 10px;
+    margin: 100px auto;
+}
+header {
+ font-size: 27px; 
+ font-weight: bold; 
+ margin-top: 10px;
+ height: 100px;
+    width: 100px; 
+ text-wrap: nowrap;
+
+}
+.galerry {
+    max-width: 80%; 
+    margin: auto; 
+    overflow: hidden;
+    display: flex;
+
+    width: 200px;
+    height: 200px;
+    border: solid 1px;
+}
+.galerry img {
+    height: 200px; 
+    height: 200px;
+  
+}
+.current-number {
+    display: flex; 
+
+}
+.current-number span {
+    height: 30px; 
+    width: 30px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+    padding: 7px; 
+    text-align: center; 
+    border: solid 1px;
+    margin: 20px;
+    cursor: pointer;
+     width: 170px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.buttuns {
+    display: flex; 
+    justify-content: space-around; 
+    width: 100%; 
+    margin: 10px 14px;
+}
+.buttuns .prevs , .next {
+    padding: 10px 18px; 
+    color: white; 
+    font-size: 19px; 
+    font-weight: 600; 
+    width: 170px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: blue; 
+    cursor: pointer; 
+
+}
+
+
+span.active {
+    background-color: rgb(122, 187, 122);
+}
+.buttuns .disabled {
+    opacity: .4;
+}

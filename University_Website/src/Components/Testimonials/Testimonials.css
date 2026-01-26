@@ -1,0 +1,70 @@
+.all-text {
+    margin: 20px  0 ;
+    display: grid;
+    place-items: center;
+}
+.main {
+    width: 100%;
+    margin-top: 200px;
+}
+.arrow-left {
+    background-color: black;
+    padding: 12px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    cursor: pointer;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    overflow: hidden;
+}
+section .profileCard {
+    background-color: #ddd; 
+    margin-left: 30px;
+    width: 540px;
+    height: 390px;
+    border-radius: 20px; 
+    box-shadow: 0px 0px 10px  rgba(0, 0 ,  0 , .4) ;
+}
+.profileCard .header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+
+}
+.header img {
+    height: 150px;
+    width: 150px; 
+    line-height: 150px;
+    border-radius: 50%;
+    border: 5px #212ea0 solid;
+    margin-left: 10px 0px 0px 20px ;
+
+}
+main.text {
+    margin-left: 20px;
+}
+ 
+p.final {
+    padding: 0 30px 10px 0;
+    margin-left: 20px;
+}
+.rigth {
+     margin-left: 20px; 
+}
+main.overflow-click {
+    overflow: hidden;
+    display: flex; 
+    justify-content: space-between;
+}
+main.hey {
+    transform: translateX(50%)
+}
