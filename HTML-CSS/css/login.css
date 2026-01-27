@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6b20f1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 400px;
+    width: 400px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 25px;
+}
+
+
+
+.container header {
+    color: #fff;
+    background-color: red;
+    height: 60px;
+    text-align: center;
+    border-radius: 0px 25px 0px 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+h3 {
+    padding: 10px auto;
+    font-weight: 700;
+    font-size: 25px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .rest-of-div {
+    height: calc(100% -60px);
+    width: 100%;
+    text-align: center;
+}
+
+.rest-of-div .user-pwd {
+    height: calc(100% - 60%);
+    margin-top: 30px;
+}
+
+img {
+
+    z-index: 100;
+    visibility: visible;
+    background-color: rgb(65, 65, 130);
+    opacity: 0.6;
+    height: 50px;
+    position: absolute;
+    left: 38px;
+    border: none;
+
+
+}
+
+input {
+    height: 50px;
+    width: 225px;
+    border-style: double;
+    padding: 10px;
+    border-left: none;
+    border-color: rgb(204, 198, 198);
+
+}
+
+span.with-out-div {
+    position: absolute;
+    left: 102px;
+    color: red;
+    height: 20px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.login {
+    height: 50px;
+    width: 70%;
+    background-color: red;
+    color: #fff;
+    font: 300;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 100px;
+    left: 15%;
+    font-family: sans-serif;
+    padding: 8px;
+}
+
+.not-member {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+input:focus {
+    border: none;
+    overflow: unset;
+    outline: none;
+}
+
+span.with-out-div:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.login:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+.not-member span:hover {
+    color: #6b20f1;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.not-member {
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.not-member span {
+    color: green;
+
+}
+
+span.with-out-div {
+    font-weight: bold;
+    font-size: 20px;
+}

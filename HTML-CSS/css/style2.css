@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #121312;
+    color: white;
+    width: 100vh;
+}
+
+section {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    border: transparent;
+    box-shadow: 5px 5px 10px white;
+    border: solid 3px;
+    border-radius: 24px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    backface-visibility: hidden;
+    transition: 0.6s;
+
+}
+
+section .image {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+}
+
+.image .Chip {
+    margin-left: 400px;
+}
+
+section .Text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .Card {
+    width: 138px;
+    height: 94px;
+    margin-top: 10px;
+    position: absolute;
+    left: 100px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+section .Text {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    display: grid;
+    margin-left: 50px;
+}
+
+section .Text .CN {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+section .Text .Number {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+section .Text .date {
+    position: absolute;
+    left: 420px;
+    top: 140px;
+}
+
+section .Text .Location {
+    position: absolute;
+    top: 140px;
+    font-size: 20px;
+    font: 300;
+}
+
+
+article {
+
+    position: relative;
+    perspective: 1000px;
+}
+
+article::before {
+    content: "";
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(189, 74, 134);
+    border-radius: 50%;
+    translate: -195px -188px;
+    z-index: 1;
+}
+
+article::after {
+    content: "";
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(189, 74, 134);
+    border-radius: 50%;
+    translate: 439px -49px;
+    z-index: 1;
+
+}
+
+
+
+.CardBackFace .spn {
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.CardBackFace .side-bar-Black {
+    width: 100%;
+    height: 20%;
+    background-color: black;
+}
+
+.CardBackFace .Side-Bar-white {
+    width: 85%;
+    height: 20%;
+    background-color: rgb(157, 157, 76);
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    border-radius: 24px;
+    background: repeating-linear-gradient(270deg, #d9bebe, #fffefe 100px);
+}
+
+.CardBackFace .Side-Bar-white .code {
+    color: black;
+    background-color: rgb(157, 157, 76);
+    align-content: center;
+    text-align: center;
+    border-radius: 4px;
+    width: 17%;
+    height: 54%;
+    margin-right: -57px;
+    padding: 6px 4px;
+    margin-top: 18px;
+
+}
+
+.CardBackFace p {
+    padding: 20px;
+}
+
+.CardBackFace p span {
+    margin-left: 35%;
+    padding: 10px;
+}
+
+section.two {
+    transform: rotateY(180deg);
+}
+
+
+
+article {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.6;
+
+}
+
+section:hover {
+    transform: rotateY(180deg);
+    backface-visibility: visible;
+}
+
+a {
+    height: 20px;
+}

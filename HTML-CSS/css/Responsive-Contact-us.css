@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0FFFF;
+}
+
+.container .left-side,
+.container .right-side {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 480px;
+    width: 980px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgb(227, 221, 221);
+    display: grid;
+    grid-template-columns: 30% 70%;
+    overflow: hidden;
+}
+
+.container .left-side {
+    height: 100%;
+    width: 95%;
+
+    margin-right: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    position: relative;
+    margin-top: 25px;
+
+
+}
+
+.left-side .information .adress span {
+    color: blue;
+}
+
+.left-side .information .adress {
+    margin-top: 10px;
+}
+
+.left-side .information .phone,
+.left-side .information .Email {
+    margin-top: 40px;
+}
+
+.left-side p {
+    opacity: 0.7;
+    color: gray;
+}
+
+.left-side span {
+    color: blue;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    height: 36%;
+    width: 100px;
+    color: black;
+    z-index: 100;
+    top: 31%;
+    border-right: solid 2px gray;
+    bottom: 50%;
+    left: 30%;
+    opacity: 0.5;
+}
+
+.container .right-side {
+    position: relative;
+    margin: 30px 10px 10px 10px;
+}
+
+h2 {
+    color: rgb(87, 13, 136);
+
+}
+
+.right-side p {
+    padding: 8px 15px 15px 0px;
+    color: gray;
+    opacity: 0.7;
+}
+
+.right-side form {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+}
+
+#Email,
+#Name {
+    height: 40px;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+}
+
+#Message {
+    height: 90px;
+    width: 90%;
+    margin: 10px;
+
+
+}
+
+input {
+    position: relative;
+    height: 40px;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+
+
+}
+
+input::placeholder {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5px;
+}
+
+input:focus+input::placeholder {
+    display: none;
+}
+
+button {
+    height: 40px;
+    width: 200px;
+    color: #fff;
+    background-color: rgb(87, 13, 136);
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+input {
+    background-color: rgb(217, 217, 255);
+    border: none;
+    text-align: left;
+}
+
+input:focus::placeholder {
+    opacity: 0;
+}

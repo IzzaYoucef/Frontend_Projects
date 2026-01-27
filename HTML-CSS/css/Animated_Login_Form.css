@@ -1,0 +1,126 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(213, 60, 86);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 515px;
+    width: 350px;
+    max-width: 380px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+.container h1 {
+    padding: 20px;
+    width: fit-content;
+    text-decoration: underline rgb(213, 60, 86) 4px;
+
+}
+
+.container .inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.inputs input {
+    margin: 20px auto 0px auto;
+    height: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    padding: 10px;
+    width: 90%;
+    transition: all 1s ease;
+}
+
+input:focus {
+    border-bottom: 4px solid rgb(213, 60, 86);
+
+
+}
+
+.inputs input::placeholder {
+    padding: 10px;
+    font-size: 15px;
+
+}
+
+input[type='submit'] {
+    width: 79%;
+    margin: 12px 29px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    /* Optional: To make the border more visible */
+    color: #fff;
+    background: rgb(213, 60, 86);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 35px;
+}
+
+.Conect-with-social-media p:first-of-type {
+    margin: 25px;
+    cursor: pointer;
+    color: rgb(213, 60, 86);
+    text-align: center;
+
+}
+
+.Conect-with-social-media .social-media {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.social-media button {
+    width: 79%;
+    margin: 12px 29px;
+    height: 40px;
+    padding: 7px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    /* Optional: To make the border more visible */
+    color: #fff;
+    background: rgb(213, 60, 86);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(0.95);
+}
+
+input[type='submit']:hover {
+    transform: scale(0.95);
+}
+
+input {
+    border-bottom: solid 4px gray;
+}

@@ -1,0 +1,119 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #e3f2fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 58px black;
+    border-radius: 24px;
+}
+
+.container {
+    width: 500px;
+    height: 300px;
+    background-color: black;
+    border-radius: 24px;
+    color: white;
+    box-shadow: 20px 20px 40% black;
+}
+
+.container .image {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container .image .chip {
+    width: 24%;
+    height: 156%;
+    margin-top: -16px;
+}
+
+.container .image .logo {
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.container .text {
+    height: 80%;
+    width: 100%;
+    position: relative;
+
+}
+
+
+.container .text span.MCard {
+    position: absolute;
+    top: -50px;
+    left: 80px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.container .text span.code {
+    position: absolute;
+    left: 20px;
+    top: 40px;
+
+}
+
+.container .text span.CardNumber {
+    position: absolute;
+    top: 20px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.container .text span.code {
+    position: absolute;
+    left: 20px;
+    top: 80px;
+    font-size: 30px;
+    font-weight: 600
+}
+
+.container .text .Valid {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+    margin-right: 10px;
+
+}
+
+.Valid p {
+    font-size: x-large;
+    padding: 10px;
+}
+
+.Valid span {
+    display: block;
+    position: absolute;
+    font-size: x-large;
+    bottom: 60px;
+    padding: 10px;
+}
+
+.text .name {
+    position: absolute;
+    bottom: 68px;
+    margin-left: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+
+
+
+.profil-card .image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+
+}
+
+.image img {
+    border-radius: 50%;
+    border: solid 1px red;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+
+}
+
+.profil-card .text {
+    margin-top: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.profil-card .media {
+    margin: 13px 0 0 -142px;
+}
+
+.profil-card .text .text1 {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px;
+
+}
+
+.profil-card .media .social-media {
+    margin: 10px 0;
+    margin-left: -15px;
+    display: flex;
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+    column-gap: 2%;
+    height: 30px;
+    width: 30px;
+    margin: 5px auto;
+}
+
+.profil-card .media .social-media .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0px 8px;
+}
+
+.profil-card .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.profil-card .button .Message,
+.profil-card .button .Subs {
+    background-color: rgb(82, 128, 214);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+
+
+.profil-card {
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgb(0, 0, 0.1);
+    border-radius: 24px;
+    position: relative;
+}
+
+.profil-card .Analyse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Analyse .data {
+    padding: 0 20px;
+    color: #4f4f4f;
+    border-right: solid 2px gray;
+    margin-bottom: 20px
+}
+
+
+
+.data:last-child {
+    border-right: none;
+}
+
+.profil-card::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(67, 67, 154);
+    height: 36%;
+    border-radius: 24px 24px 24px 24px;
+    width: 100%;
+    z-index: 0;
+}

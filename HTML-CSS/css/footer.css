@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+footer {
+    background-color: #1a0554;
+    color: #fff;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+footer .Up-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 30px;
+    border-bottom: solid 2px gray;
+    font-weight: 700;
+}
+
+.Up-content span {
+    font-size: 40px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+}
+
+p::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.content a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+a:hover {
+    color: #00ffff;
+}
+
+.content li {
+    margin-bottom: 20px;
+}
+
+.content .subscribe form {
+    display: grid;
+    row-gap: 20px;
+}
+
+.subscribe form input,
+.subscribe form button {
+    width: 100%;
+    height: 30px;
+    padding: 20px;
+}
+
+input::placeholder {
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+input {
+    background-color: #1a0554;
+    border-color: #fff;
+    border: solid 2px #fff;
+}
+
+button {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Up-content .social-media i {
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    font-weight: 100px;
+    border-radius: 50%;
+
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+i.bxl-facebook {
+    color: #fff;
+    background-color: blue;
+}
+
+i.bxl-youtube {
+    background-color: #fff;
+    color: red;
+}
+
+i.bxl-twitter {
+    background-color: rgb(104, 183, 244);
+}
+
+i.bxl-instagram {
+    background-color: #fff;
+    color: red;
+}
+
+p::selection {
+    color: #000;
+    background-color: #fff;
+}

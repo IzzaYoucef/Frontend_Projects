@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    height: 100vh;
+    background-image: url('../../../../Users/DELL/Downloads/cyber-monday-wireless-keyboard-9w63anflfskwqbm8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: calc(40%);
+}
+
+
+.side-bar {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 200;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 340px;
+    height: 100%;
+    position: relative;
+    visibility: hidden;
+    transition-duration: 3s, 1s;
+    transition-property: margin-right, color;
+}
+
+.side-bar .head {
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.side-bar .link {
+    margin-top: 20px;
+    display: grid;
+    column-gap: 30px;
+    height: 70%;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.link {
+    width: 320px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+
+}
+
+a:hover {
+    color: aqua;
+
+}
+
+.side-bar .head {
+    color: #fff;
+    margin-bottom: 20px;
+    position: absolute;
+    top: -30px;
+}
+
+.side-bar .link {
+    top: 130px;
+    position: absolute;
+}
+
+.side-bar .head:hover,
+.side-bar a:hover {
+    border-left: 1px #fff solid;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.side-bar:hover {
+    visibility: visible;
+
+}
+
+.hr-line:hover {
+    visibility: hidden;
+}
+
+hr {
+
+    display: grid;
+    width: 40px;
+}
+
+i {
+    cursor: pointer;
+}
+
+#icon:checked+.side-bar {
+    display: none;
+}
+
+.hr-line {
+    display: grid;
+    grid-template-rows: 3;
+    row-gap: 10px;
+    z-index: 100;
+    visibility: visible;
+
+}
+
+.social-media {
+    display: flex;
+    position: absolute;
+    top: 90%;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 5%;
+    opacity: 0.6;
+    font-size: 20px;
+}
+
+.social-media a {
+    border: none;
+}
+
+#icon {
+    margin-left: 20px;
+    position: absolute;
+    right: 10px;
+}
+
+.link {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.social-media a:hover {
+    color: #fff;
+    opacity: 100;
+}

@@ -1,0 +1,96 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+.container {
+    height: 50px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0 , 0 , 0.5);
+    display: flex;
+    justify-content: space-between ; 
+    align-items: center;
+    padding: 20px;
+
+}
+.container input {
+    appearance: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: gray;
+    opacity: .5;
+    border: solid 1px ;
+    position: relative;
+ 
+}
+input:checked {
+    background-color: blue;
+}
+input::before {
+    content: "";
+    height: 38px;
+    width: 40px;
+    padding: 0 0 1px -1px;
+    box-shadow: 0px 0px 15px rgba(0, 0 , 0 , 0.5);
+    background-color: #fff ;
+    position: absolute;
+    border-radius: 50px;
+    transition: all linear 0.3s ;
+
+}
+input:checked::before {
+    right: 0px;
+    background-color: #fff ;
+}
+.container #Dis {
+    font-size: 27px;
+    font-weight: bold;
+    color: gray;
+    transition: all linear .3s;
+}
+
+#Dis::before {
+    content: "Disabled";
+    font-size: 27px;
+    font-weight: bold;
+    color: gray;
+    transition: all linear .4s;
+    
+}
+/* i'nput:checked ~  #Dis::before {
+    visibility: visible;
+    color: blue;
+}' */
+input:checked ~ #Dis::before {
+    content: "Enabled";
+    color: blue;
+}
+.spiner {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border : 3px solid red ;
+    border-radius: 50%;
+    border-style: solid;
+    border-left-color: transparent;
+    margin-left: 20px;
+    animation: rotation 1.5s linear infinite;
+    
+}
+@keyframes rotation {
+    0% {
+     transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
