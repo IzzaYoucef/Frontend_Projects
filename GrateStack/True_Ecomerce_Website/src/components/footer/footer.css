@@ -23,15 +23,16 @@ header span {
 footer div.insert-email-and-subs {
     margin: auto; 
     width: 80%;
+    max-width: 500px;
     display: flex;
     position: relative;
     margin-top: 60px;
 }
 .insert-email-and-subs input {
-    width: 200%; 
+    width: 100%; 
     border-radius: 30px; 
     outline: none; 
-    padding: 10px 17px;
+    padding: 10px 130px 10px 17px;
     border: none;
     
 }
@@ -60,7 +61,8 @@ footer .our-company {
 }
 .our-company ul {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     margin-top: 18px;
 }
@@ -83,4 +85,42 @@ ul li:hover {
 ul.social-media-icons img {
     margin-left: 10px;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    footer {
+        width: 92%;
+    }
+    footer header p {
+        font-size: 18px;
+        text-align: center;
+    }
+    footer div.insert-email-and-subs {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .insert-email-and-subs button {
+        font-size: 16px;
+        padding: 7px 10px;
+    }
+    .our-company ul {
+        gap: 8px;
+    }
+    ul li {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    footer header p {
+        font-size: 15px;
+    }
+    .insert-email-and-subs input {
+        font-size: 13px;
+        padding-right: 95px;
+    }
+    .insert-email-and-subs button {
+        font-size: 13px;
+        padding: 5px 8px;
+    }
 }

@@ -7,7 +7,7 @@ import Man from './ages/Man'
 import Woman from './ages/Woman'
 import Kids from './ages/Kids'
 import Login from './ages/Login'
-import Footer from './components/footer/footer'
+import Footer from './components/footer/Footer'
 const App = () => {
   return (
     <div>

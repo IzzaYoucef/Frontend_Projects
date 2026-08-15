@@ -1,17 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './CssPages/Login.css';
 
 const Login = () => {
   const [member, setMember] = useState(true);
-  const allInpuuts = document.querySelectorAll('input'); 
-  allInpuuts.forEach((input) => {
-    input.setAttribute('required' , '')
-  })
+
+  useEffect(() => {
+    const allInpuuts = document.querySelectorAll('input');
+    allInpuuts.forEach((input) => {
+      input.setAttribute('required', '')
+    })
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
 
   return (
     <div className='main-container'> 
-       <form action="
-       ">
+       <form onSubmit={handleSubmit}>
         <div className="login-container">
         <header>
             {

@@ -1,6 +1,7 @@
 .login-container {
    display: grid;
    width: 600px;
+   max-width: 90%;
 background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
    margin:  8rem auto;
    padding: 15px; 
@@ -53,4 +54,18 @@ main {
 .big {
     width: 70px; 
     height: 70px;
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        margin: 4rem auto;
+        padding: 15px;
+    }
+    .login-container button {
+        font-size: 18px;
+        width: 100%;
+    }
+    main label {
+        font-size: 13px;
+    }
 }

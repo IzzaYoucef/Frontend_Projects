@@ -8,7 +8,14 @@ li a {
   list-style: none;
   text-decoration: none;
 }
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
 body {
   min-height: 100vh;
   max-height: 200vh;
+}
+img {
+  max-width: 100%;
 }

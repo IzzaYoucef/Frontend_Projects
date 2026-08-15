@@ -4,6 +4,8 @@
     justify-content: center; 
     align-items: center;
     margin-top: 20px;
+    text-align: center;
+    padding: 0 15px;
 }
 h1 {
     position: relative;
@@ -18,4 +20,10 @@ h1 {
    position: absolute;
    left: 50%;
    transform: translate(-50% , -50%);
+}
+
+@media (max-width: 480px) {
+    .usable-componenet h1 {
+        font-size: 22px;
+    }
 }

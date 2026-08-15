@@ -2,6 +2,7 @@
     width: 100% ;
     margin: auto; 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 90px;
 }
@@ -14,6 +15,8 @@
 }
 .img-desc img {
     border-radius: 10px;
+    width: 100%;
+    height: auto;
 }
 
 .img-desc h2 {
@@ -21,4 +24,19 @@
 }
 .description h2 {
     text-decoration: line-through;
+}
+
+@media (max-width: 900px) {
+    .images {
+        margin-top: 50px;
+    }
+    .images .img-desc {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .images .img-desc {
+        width: 100%;
+    }
 }
